@@ -1,0 +1,203 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* needed for container min-height */
+    font-family: "FiraSans", Times, serif;
+    font-size: 1em;
+}
+body{
+    background-image: url("img/background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imgProduct{
+    display: inline-block;
+    vertical-align: middle;
+    height:240px;
+    width: 240px;
+    margin-top:10px;
+    margin-left: 10px;
+    /*margin-bottom:5px;
+    padding-left: 15px;
+    padding-bottom: 15px;*/
+}
+
+.imgPanier{
+    display: inline-block;
+    vertical-align: middle;
+    height:180px;
+    width:180px;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+.nameProduct{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.col-md-6 > a {
+    text-decoration: none;
+    color: black;
+}
+
+.box{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #d5d5d5;
+    height:300px;
+    background-color: rgba(124,277,91,0.7);
+}
+
+.container{
+    background-color: transparent;
+}
+
+.row{
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-top-color: transparent;
+    padding-top: 10px;
+}
+
+body > .row{
+    padding-top: 0px;
+    height:100%;
+}
+
+.descriptionProduit{
+    margin-top: 21px;
+    overflow: scroll;
+    height: 225px;
+    overflow-x: hidden;
+    text-align: justify;
+    /*border: 1px solid #d5d5d5;
+    border-radius: 4px;*/
+    padding: 5px;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+.containerTable{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media (min-width: 768px) {
+  .container.containerTable {
+    width: 730px;
+  }
+}
+@media (min-width: 992px) {
+  .container.containerTable{
+    width: 950px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1180px;
+  }
+}
+
+th {
+  text-align: center;
+}
+
+tr > td {
+    text-align: center;
+}
+
+.imgCategorie{
+    width: 180px;
+    height: 180px;
+}
+
+.container.middlebody{
+    position: relative; /* needed for footer positioning*/
+    margin: 0 27.5% ; /* center, not in IE5 */
+    height: auto !important; /* real browsers */
+    height: 100%; /* IE6: treaded as min-height*/
+    min-height: 90%; /* real browsers */
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.border.row{
+    padding: auto;
+}
+
+.logo{
+    position: fixed;
+    top: 0;
+    left: 100px;
+}
+
+tfoot > tr > td {
+    border-bottom-color: transparent !important;
+}
+
+.table > tbody > tr > td{
+    vertical-align: middle !important;
+}
+
+table{
+    background-color: #7CE35B;
+}
+
+h3 > a{
+    text-decoration: none;
+    color: #395937;
+}
+
+a > .glyphicon.glyphicon-trash {
+    color: black;
+}
+
+.table-bordered{
+    border-radius: 5px;
+}
+
+.add{
+    float: right;
+}
+
+.boxSign{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #d5d5d5;
+    height:100%;
+    background-color: rgba(124,277,91,0.7);
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: rgba(235,204,209,0.7);
+  border: 1px solid #ddd;
+}
+
+.form-group.row > label {
+    font-weight: normal;
+    text-align: right;
+}
