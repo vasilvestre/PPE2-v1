@@ -33,6 +33,15 @@ body{
     margin-left: 10px;
 }
 
+.imgProm{
+    display: inline-block;
+    vertical-align: middle;
+    height:380px;
+    width:730px;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
 .nameProduct{
     padding-top: 50px;
     padding-left: 100px;
@@ -51,6 +60,27 @@ body{
     height:300px;
     background-color: rgba(124,277,91,0.7);
 }
+
+.boxSign{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #d5d5d5;
+    height:100%;
+    background-color: rgba(124,277,91,0.7);
+}
+
+.boxProm{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #d5d5d5;
+    height:100%;
+    padding-bottom: 15px;
+    background-color: rgba(124,277,91,0.7);
+}
+
+
 
 .container{
     background-color: transparent;
@@ -148,6 +178,7 @@ tr > td {
     position: fixed;
     top: 0;
     left: 100px;
+    opacity: 0.9;
 }
 
 tfoot > tr > td {
@@ -179,25 +210,27 @@ a > .glyphicon.glyphicon-trash {
     float: right;
 }
 
-.boxSign{
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    border-color: #d5d5d5;
-    height:100%;
-    background-color: rgba(124,277,91,0.7);
-}
-
 .list-group-item {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-  margin-bottom: -1px;
   background-color: rgba(235,204,209,0.7);
-  border: 1px solid #ddd;
 }
 
 .form-group.row > label {
     font-weight: normal;
     text-align: right;
+}
+
+.table.account{
+    background-color: transparent;
+}
+
+.label-success {
+    background-color: #7CE35B;
+    opacity: 0.8;
+    border: 1px solid #d5d5d5;
+}
+.label {
+    font-size: 100%; 
+    font-weight: normal; 
+    line-height: 1;
+    color: black;
 }

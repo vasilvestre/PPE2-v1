@@ -8,7 +8,7 @@
                     <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
                     <li><a href="category.php"><span class="glyphicon glyphicon-list-alt"></span> Catégories</a></li>
                     <li><a href="login.php"><span class="glyphicon glyphicon-pencil"></span> Mon compte</a></li>
-                    <li><a href="panier.php"><span class="glyphicon glyphicon-shopping-cart"></span> Panier(<?= $panier->count(); ?>)</a></li>
+                    <li><a href="panier.php"><span class="glyphicon glyphicon-shopping-cart"></span> Panier <span id="count" class="badge"><?= $panier->count(); ?></span></span></a></li>
                   </ul>
                 </nav>
               </div>

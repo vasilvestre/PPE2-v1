@@ -5,7 +5,7 @@
                     <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
                     <li class="active"><a href="category.php"><span class="glyphicon glyphicon-list-alt"></span> Catégories</a></li>
                     <li><a href="login.php"><span class="glyphicon glyphicon-pencil"></span> Mon compte</a></li>
-                    <li><a href="panier.php"><span class="glyphicon glyphicon-shopping-cart"></span> Panier(<?= $panier->count(); ?>)</a></li>
+                    <li><a href="panier.php"><span class="glyphicon glyphicon-shopping-cart"></span> Panier <span id="count" class="badge"><?= $panier->count(); ?></span></span></a></li>
                   </ul>
                 </nav>
               </div>
@@ -24,5 +24,12 @@
                     </div>
                 </div>
              <?php endforeach ?>
+             </div>
+             <div class="border row">
+                 <div style="text-align:center" class="border col-sm-12">
+                    <div class="boxProm">
+                        <a href="promotions.php"><img class="imgProm" src="src/img/categories/promotions.png"/></a>
+                    </div>
+                </div>
              </div>
 <?php require 'footer.php'?>

@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 class DB{
     
@@ -40,11 +40,9 @@ class DB{
                     ));
     }
     
-    // public function connect($sql, $data = array()){
-    //     $req = $this->db->prepare($sql);
-    //     $req ->execute($data);
-    //     return $req->fetchAll(PDO::FETCH_NUM);     
-    // }
+    public function delete($sql){
+        $req = $this->db->query($sql);
+    }
     
     public function query($sql, $data = array()){
         $req = $this->db->prepare($sql);

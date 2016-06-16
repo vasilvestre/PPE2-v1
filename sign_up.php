@@ -25,14 +25,18 @@
         
         if($_POST['password'] != $_POST['password2']){
             $errors['password'] = "Vos mots de passe ne concordent pas";
+        }else{
+            if(!preg_match("/^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/", $_POST['password'])){
+                $errors['password'] = "Votre mot de passe doit contenir au moins une lettre, un nombre et doit faire plus de 6 caractères.";
+            }
         }
         
         if(empty($_POST['country'])){
             $errors['country'] = "Veuillez selectionner un pays";
         }
         
-        if(empty($_POST['address'])){
-            $errors['address'] = "Veillez indiquer une adresse";
+        if(empty($_POST['address']) ||!preg_match("/((^[0-9]*).?((BIS)|(TER)|(QUATER))?)?((\W+)|(^))(([a-z]+.)*)([0-9]{5})?.(([a-z\'']+.)*)$/",$_POST['address'])){
+            $errors['address'] = "Veillez indiquer une adresse valide";
         }
         
         if(empty($errors)){

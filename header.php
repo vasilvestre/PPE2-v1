@@ -20,6 +20,6 @@
     
     <body>
             <div class="logo">
-                <a href="index.php"><img src="src/img/logo.jpeg" style="width:250px"></img></a>
+                <a href="index.php"><img src="src/img/work.jpeg" style="width:250px"></img></a>
             </div>
             <div class="container middlebody">

@@ -6,7 +6,7 @@
                         <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
                         <li><a href="category.php"><span class="glyphicon glyphicon-list-alt"></span> Catégories</a></li>
                         <li><a href="login.php"><span class="glyphicon glyphicon-pencil"></span> Mon compte</a></li>
-                        <li class="active"><a href="panier.php"><span class="glyphicon glyphicon-shopping-cart"></span> Panier(<span class="count"><?= $panier->count(); ?></span>)</span></a></li>
+                        <li class="active"><a href="panier.php"><span class="glyphicon glyphicon-shopping-cart"></span> Panier</span></a></li>
                     </ul>
                 </nav>
             </div>
